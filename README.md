@@ -6,9 +6,9 @@ Future plan TBD, for now maybe create a REACT front end for voting on best pouti
 
 ## DEMO ##
 
-<a href="http://poutinemtl.herokuapp.com/api/v1/poutines" target="_blank">http://poutinemtl.herokuapp.com/api/v1/poutines</a>
-http://poutinemtl.herokuapp.com/api/v1/poutines/chez-claudette
-http://poutinemtl.herokuapp.com/api/v1/poutines/ma-poule-mouillee
+<a href="http://poutinemtl.herokuapp.com/api/v1/poutines" target="_blank">http://poutinemtl.herokuapp.com/api/v1/poutines</a> <br>
+http://poutinemtl.herokuapp.com/api/v1/poutines/chez-claudette <br>
+http://poutinemtl.herokuapp.com/api/v1/poutines/ma-poule-mouillee <br>
 
 works for GET / POST / PATCH / DESTROY
 
