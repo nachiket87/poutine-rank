@@ -17,5 +17,8 @@
     "vendor",
     "public"
   ],
-  "compileOnSave": false
+  "compileOnSave": false,
+  "types": [
+      "webpack-env"
+    ]
 }
