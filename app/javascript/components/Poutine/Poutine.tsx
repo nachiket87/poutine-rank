@@ -29,14 +29,7 @@ const Poutine: React.FC = (props) => {
   return ( 
   <div className="wrapper">
     <div className="column">
-      { 
-        loaded && 
-        <Header
-          attributes={poutine.data.attributes}
-          reviews={poutine.included}
-        />
-      }
-      <div className="reviews"></div>
+      <div className="reviews"> WHY THE F</div>
     </div>
     <div className="column">
       <div className="review-form">Review Form Goes here</div>
