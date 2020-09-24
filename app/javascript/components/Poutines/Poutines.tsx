@@ -1,4 +1,5 @@
-import React, { useState, useEffect, Fragment } from 'react'
+import React, { useState, useEffect } from 'react'
+import Poutine from './Poutine'
 
 const Poutines: React.FC = () => {
   const [poutines, setPoutines] = useState([])
@@ -14,15 +15,22 @@ const Poutines: React.FC = () => {
       .catch( resp => console.log(resp))
   }, [poutines.length])
 
-  const list = poutines.map( item => {
-    return(<li key={item.attributes.name}>{ item.attributes.name }</li>)
+  const list: JSX.Element[] = poutines.map( item => {
+    console.log(typeof(item.attributes))
+    return(<Poutine key={item.attributes.name} attributes= {item.attributes} />)
+    
   })
 
   return (
-    <Fragment>
-      <div> This is the Poutines#Index view </div>
-      <ul>{list}</ul>
-    </Fragment>
+    <div className="home">
+      <div className="header">
+        <h1> Poutines </h1>
+        <div className="subheader">Honest Poutine Reviews.</div>
+      </div>
+      <div className="list">
+        <ul>{list}</ul>
+      </div>
+    </div>
   )}
 
 export default Poutines
