@@ -9,7 +9,6 @@ const Home: styled = styled.div`
  margin-right: auto;
 `
 const Header: styled = styled.div`
- padding: 100px 100px 10px 100px;
 
  h1 {
   font-size: 42px;
@@ -21,10 +20,9 @@ const Subheader: styled = styled.div`
 `
 const Grid: styled = styled.div`
  display: grid;
- grid-template-columns: repeat(4, 1fr);
+ grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
  grid-gap: 20px;
  width: 100%;
- padding: 20px;
 `
 
 const Poutines: React.FC = () => {
@@ -42,7 +40,6 @@ const Poutines: React.FC = () => {
   }, [poutines.length])
 
   const list: JSX.Element[] = poutines.map( item => {
-    console.log(typeof(item.attributes))
     return(<Poutine key={item.attributes.name} attributes= {item.attributes} />)
     
   })
@@ -50,7 +47,7 @@ const Poutines: React.FC = () => {
   return (
     <Home>
       <Header>
-        <h1> Poutines </h1>
+        <h1> MTL Poutines </h1>
         <Subheader>Honest Poutine Reviews.</Subheader>
         <Grid>
           {list}
