@@ -20,7 +20,7 @@ const Subheader: styled = styled.div`
 `
 const Grid: styled = styled.div`
  display: grid;
- grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+ grid-template-columns: repeat(2, 1fr);
  grid-gap: 20px;
  width: 100%;
 `
