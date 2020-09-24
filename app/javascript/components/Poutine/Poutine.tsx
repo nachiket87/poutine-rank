@@ -22,14 +22,9 @@ const Main = styled.div`
   padding-left: 50px;
 `
 
-interface pout {
-  title: string,
-  description: string,
-  score: number
-}
 
 const Poutine: React.FC = (props) => {
-  let w: pout = {title: '', description: '', score: 0}
+  let w = {title: '', description: '', score: 0}
   const [poutine, setPoutine] = useState(w)
   const [review, setReview] = useState(w)
   const [loaded, setLoaded] = useState(false)
