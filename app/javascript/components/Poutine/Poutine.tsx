@@ -10,11 +10,10 @@ const Poutine: React.FC = (props) => {
 
   useEffect( () => {
     // api/v1/poutines/la-banquise
+    let slug = ""
     if(props.match){
-      const slug = props.match.params.slug
-    } else {
-      const slug="";
-    }
+      slug = props.match.params.slug
+    } 
     const url = `/api/v1/poutines/${slug}`
 
     axios.get(url)
