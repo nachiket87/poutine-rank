@@ -8,8 +8,8 @@ interface attrib {
   slug: string
 }
 
+
 const Poutine = (props: {attributes: attrib}) => {
-  console.log(props.attributes)
   return (
     <div className="card">
       <div className="poutine-logo">
