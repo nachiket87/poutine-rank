@@ -13,6 +13,7 @@ const Poutine = (props: {attributes: attrib}) => {
   return (
     <div className="card">
       <div className="poutine-logo">
+        <img src={props.attributes.image_url} alt={props.attributes.name} />
       </div>
       <div className="poutine-name">
         {props.attributes.name}
@@ -21,7 +22,7 @@ const Poutine = (props: {attributes: attrib}) => {
         {props.attributes.avg_score}
       </div>
       <div className="poutine-link">
-        <Link to={`/poutines/${props.attributes.slug}`}> TEST </Link>
+        <Link to={`/poutines/${props.attributes.slug}`}> {props.attributes.name} </Link>
       </div>
     </div>
   )
