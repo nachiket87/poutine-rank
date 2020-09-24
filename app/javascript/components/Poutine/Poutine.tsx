@@ -22,7 +22,7 @@ const Poutine: React.FC = (props) => {
   return ( 
   <div className="wrapper">
     <div className="column">
-      <div className="reviews"> WHY THE F</div>
+      <div className="reviews">{poutine}</div>
     </div>
     <div className="column">
       <div className="review-form">Review Form Goes here</div>
