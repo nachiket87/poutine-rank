@@ -1,10 +1,16 @@
 import React from 'react'
+import {Route, Switch} from 'react-router-dom'
+import Poutines from './Poutines/Poutines'
+import Poutine from './Poutine/Poutine'
 
 const App: React.FC = () => {
   return(
-  <div>
-    <h2>Looking for Poutine?</h2>
-  </div>)
+    <Switch>
+      <Route exact path="/" component={Poutines} />
+      <Route exact path="/poutines/:slug" component={Poutine} />
+    </Switch>
+  )
+
 }
 
 export default App
