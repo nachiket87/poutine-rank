@@ -1,26 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import axios from 'axios'
 import Header from './Header'
-import styled from 'styled-components'
-
-const Wrapper = styled.div`
-  margin-left: auto;
-  margin-right: auto;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-`
-const Column = styled.div`
-  background: white;
-  height: 100vh;
-  overflow: scroll;
-
-  &:last-child {
-    background: black;
-  }
-`
-const Main = styled.div`
-  padding-left: 50px;
-`
 
 interface pout {
   title: string,
@@ -47,23 +27,21 @@ const Poutine: React.FC = (props) => {
       .catch( resp => console.log(resp))
   }, [])
   return ( 
-  <Wrapper>
-    <Column>
-      <Main>
-        { 
-          loaded && 
-          <Header
-            attributes={poutine.data.attributes}
-            reviews={poutine.included}
-          />
-        }
-        <div className="reviews"></div>
-      </Main>
-    </Column>
-    <Column>
+  <div className="wrapper">
+    <div className="column">
+      { 
+        loaded && 
+        <Header
+          attributes={poutine.data.attributes}
+          reviews={poutine.included}
+        />
+      }
+      <div className="reviews"></div>
+    </div>
+    <div className="column">
       <div className="review-form">Review Form Goes here</div>
-    </Column>
-  </Wrapper> )
+    </div>
+  </div> )
 }
 
 export default Poutine
