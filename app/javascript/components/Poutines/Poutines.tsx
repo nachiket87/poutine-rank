@@ -41,7 +41,6 @@ const Poutines: React.FC = () => {
 
   const list: JSX.Element[] = poutines.map( item => {
     return(<Poutine key={item.attributes.name} attributes= {item.attributes} />)
-    
   })
 
   return (

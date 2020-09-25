@@ -24,10 +24,12 @@ const Poutine: React.FC<MyProps> = ({ match }) => {
       })
       .catch( resp => console.log(resp))
   }, [])
+  console.log(poutine)
   return ( 
   <div className="wrapper">
     <div className="column">
-      <div className="reviews"> WHY THE  </div>
+      Poutine Name should be here
+      <div className="reviews"></div>
     </div>
     <div className="column">
       <div className="review-form">Review Form Goes here</div>
