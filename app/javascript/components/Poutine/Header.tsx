@@ -1,19 +1,20 @@
 import React from 'react'
 
 const Header = (props) => {
-  const {name, image_url, avg_score} = props.attributes
-  const total = props.reviews.length
-  return (
-    <div className='wrapper'>
-      <h1> <img src={image_url} alt={name} />{name}</h1>
-      <div> 
-        <div className="totalReviews">{total} User Reviews</div>
-        <div className="starRating"></div>
-        <div className="totalOutof">{avg_score} out of 5</div>
-      </div>
+    const {name, image_url, avg_score} = props.attributes.data.attributes
+    const total = props.attributes.data.relationships.reviews.data.length
+    console.log(props.attributes.data.relationships.reviews.data.length)
+    return (
+      <div className='wrapper'>
+        <div> 
+          <p>name: {name}</p>
+          <p>image_url: {image_url}</p>
+          <p>avg_score: {avg_score}</p>
+          <p>total reviews: {total}</p>
+        </div>
 
-    </div>
-  )
+      </div>
+    )
 }
 
 export default Header
