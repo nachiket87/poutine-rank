@@ -4,6 +4,10 @@ API for CRUD actions on the best Poutines in MTL and their corresponding reviews
 
 Future plan TBD, for now maybe create a REACT front end for voting on best poutines.
 
+## ISSUE ## : https://github.com/DefinitelyTyped/DefinitelyTyped/issues/17355
+
+This is too hard to solve. Looking for collaborators. 
+
 ## DEMO ##
 
 <a href="http://poutinemtl.herokuapp.com/api/v1/poutines" target="_blank">http://poutinemtl.herokuapp.com/api/v1/poutines</a> <br>
