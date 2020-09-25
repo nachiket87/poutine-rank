@@ -44,7 +44,6 @@ const Linkwrapper = styled.div`
 
 
 const Poutine = (props: {attributes: attrib}) => {
-  console.log(poutine);
   return (
     <Card>
       <Poutineimage>
