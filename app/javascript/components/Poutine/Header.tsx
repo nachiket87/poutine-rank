@@ -3,7 +3,6 @@ import React from 'react'
 const Header = (props) => {
     const {name, image_url, avg_score} = props.attributes.data.attributes
     const total = props.attributes.data.relationships.reviews.data.length
-    console.log(props.attributes.data.relationships.reviews.data.length)
     return (
       <div className='wrapper'>
         <div> 
